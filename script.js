@@ -10,9 +10,9 @@ function time () {
   age = document.getElementById('text1').value
   day = document.getElementById('text2').value
   age = parseInt(age)
-  if ((age <= 18) && (day != 'Saturday' && day != 'Sunday')) {
+  if ((age <= 18) && (day !== 'Saturday' && day !== 'Sunday')) {
     document.getElementById('results').innerHTML = 'It\'s time to go to school!'
-  } else if ((age > 18) && (day != 'Saturday' && day != 'Sunday')) {
+  } else if ((age > 18) && (day !== 'Saturday' && day !== 'Sunday')) {
     document.getElementById('results').innerHTML = 'It\'s time to go to work!'
   } else {
     document.getElementById('results').innerHTML = 'It\'s finally time to relax for the weekend!'
